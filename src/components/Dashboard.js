@@ -6,9 +6,9 @@ import SideBar from './SideBar'
 export default function Dashboard({id}) {
     const {selectedConversation} = useConversations()
     return (
-        <div className='d-flex' style={{height:'100vh'}}>
-            <SideBar id={id}/>
-            { selectedConversation &&<OpenConversation />}
+        <div className="d-flex" style={{ height: '100vh' }}>
+          <SideBar id={id} />
+          {selectedConversation && <OpenConversation />}
         </div>
-    )
+      )
 }

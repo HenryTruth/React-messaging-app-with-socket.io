@@ -5,12 +5,12 @@ import { useContacts } from '../context/ContactsProvider'
 export default function Contacts() {
     const { contacts } = useContacts()
     return (
-        <ListGroup variant="flash">
-            {contacts.map(contact => (
-                <ListGroup.Item key={contact.id}>
-                    {contact.name}
-                </ListGroup.Item>
-            ))}
+        <ListGroup variant="flush">
+          {contacts.map(contact => (
+            <ListGroup.Item key={contact.id}>
+              {contact.name}
+            </ListGroup.Item>
+          ))}
         </ListGroup>
-    )
+      )
 }
